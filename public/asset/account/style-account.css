@@ -1,0 +1,322 @@
+#login_modal,
+#login_twofactor_modal{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+#login_modal_content,
+#login_twofactor_modal_content
+{
+    width: 500px;
+    background-color: rgb(15, 15, 15);
+    margin: auto;
+    border-radius: 15px;
+}
+
+.login_close {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+.login_close img:hover {
+    filter: invert(15%);
+}
+
+.login_modal_info {
+    width: 100%;
+    padding: 20px
+}
+
+.login_block_form {
+    width: calc(100% - 100px);
+    margin: 0 auto;
+}
+
+.login_modal_info input,
+.login_modal_info button,
+#login_select_server {
+    outline: 0;
+    outline-offset: 0;
+    padding: 15px;
+    border: none;
+    background-color: rgb(19, 19, 19);
+    border-radius: 15px;
+    color: white;
+}
+
+#login_select_server{
+    margin: 0 auto;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.login_modal_info input::placeholder {
+    color: white;
+}
+
+.login_modal_info input {
+    width: 100%;
+}
+
+.login_modal_info button {
+    text-align: center;
+    border: 1px solid greenyellow;
+    padding: 10px;
+}
+
+.login_modal_info button:hover {
+    -webkit-box-shadow: 0 0 10px 0 rgb(173, 255, 47);
+    -moz-box-shadow: 0 0 10px 0 rgba(173, 255, 47, 1);
+    box-shadow: 0 0 10px 0 rgba(173, 255, 47, 1);
+}
+
+.button_account{
+    outline: 0;
+    outline-offset: 0;
+    color: white;
+    background-color: rgba(17, 17, 17);
+    padding: 0 30px;
+    height: 35px;
+    border-radius: 15px;
+    font-size: 15px;
+}
+
+.button_account_green{
+    border: 1px solid greenyellow;
+    -webkit-box-shadow: 0 0 10px 0 rgb(173, 255, 47);
+    -moz-box-shadow: 0 0 10px 0 rgba(173, 255, 47,1);
+    box-shadow: 0 0 10px 0 rgba(173, 255, 47,1);
+}
+
+.button_account_green:hover{
+    -webkit-box-shadow: 0 0 15px 0 rgb(173, 255, 47);
+    -moz-box-shadow: 0 0 15px 0 rgba(173, 255, 47,1);
+    box-shadow: 0 0 15px 0 rgba(173, 255, 47,1);
+}
+
+.button_account_red{
+    border: 1px solid #d71818;
+    -webkit-box-shadow: 0 0 10px 0 rgb(215, 24, 24);
+    -moz-box-shadow: 0 0 10px 0 rgba(215, 24, 24,1);
+    box-shadow: 0 0 10px 0 rgba(215, 24, 24,1);
+}
+
+.button_account_red:hover{
+    -webkit-box-shadow: 0 0 15px 0 rgb(215, 24, 24);
+    -moz-box-shadow: 0 0 15px 0 rgba(215, 24, 24,1);
+    box-shadow: 0 0 15px 0 rgba(215, 24, 24,1);
+}
+
+.button_account_blue{
+    border: 1px solid #11e5f3;
+    -webkit-box-shadow: 0 0 10px 0 rgb(17, 229, 243);
+    -moz-box-shadow: 0 0 10px 0 rgba(17, 229, 243,1);
+    box-shadow: 0 0 10px 0 rgba(17, 229, 243,1);
+}
+
+.button_account_blue:hover{
+    -webkit-box-shadow: 0 0 15px 0 rgb(17, 229, 243);
+    -moz-box-shadow: 0 0 15px 0 rgba(17, 229, 243,1);
+    box-shadow: 0 0 15px 0 rgba(17, 229, 243,1);
+}
+
+
+/* account styles */
+.block_account_content_text{
+    height: inherit;
+    width: 100%;
+    margin-left: 20px;
+    padding-bottom: 10px;
+}
+
+#block_account_need_confirm_modal{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.block_account_need_confirm_modal_content{
+    min-width: 500px;
+    max-height: 500px;
+    background-color: rgb(15, 15, 15);
+    margin: auto;
+    overflow: auto;
+    border-radius: 15px;
+}
+
+.block_account_need_confirm_modal_content::-webkit-scrollbar{
+    background-color: rgba(0, 0, 0, 0);
+    width: 5px;
+}
+
+.block_account_need_confirm_modal_content::-webkit-scrollbar-thumb{
+    background-color: rgb(24, 24, 24);
+    border-radius: 15px;
+    margin: 20px;
+}
+
+.block_account_need_confirm_modal_content p{
+    margin: 0;
+}
+
+.buttonSendFormLoad{
+    margin: auto 0 auto auto;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    height: 50px;
+    border-radius: 15px;
+    background-color: transparent;
+    border: 1px solid greenyellow;
+    -webkit-box-shadow: 0 0 10px 0 rgb(173, 255, 47);
+    -moz-box-shadow: 0 0 10px 0 rgba(173, 255, 47,1);
+    box-shadow: 0 0 10px 0 rgba(173, 255, 47,1);
+}
+
+.buttonSendFormLoad:hover{
+    -webkit-box-shadow: 0 0 15px 0 rgb(173, 255, 47);
+    -moz-box-shadow: 0 0 15px 0 rgba(173, 255, 47,1);
+    box-shadow: 0 0 15px 0 rgba(173, 255, 47,1);
+}
+
+/* load modal */
+#block_account_load_modal{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.block_account_load_modal_content{
+    min-width: 500px;
+    max-height: 500px;
+    background-color: rgb(15, 15, 15);
+    margin: auto;
+    overflow: auto;
+    border-radius: 15px;
+}
+
+.input-file {
+    position: relative;
+    display: inline-block;
+}
+.input-file span,
+.button_send_files{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    font-size: 14px;
+    vertical-align: middle;
+    color: rgb(255 255 255);
+    text-align: center;
+    border-radius: 4px;
+    background-color: #419152;
+    line-height: 22px;
+    height: 40px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border: none;
+    margin: 0;
+    transition: background-color 0.2s;
+}
+.input-file input[type=file] {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    display: block;
+    width: 0;
+    height: 0;
+}
+
+.input-file input[type=file]:focus + span{
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+
+.input-file:hover span,
+.button_send_files:hover{
+    background-color: #59be6e;
+}
+.input-file:active span,
+.button_send_files{
+    background-color: #2E703A;
+}
+
+.input-file input[type=file]:disabled + span{
+    background-color: #eee;
+}
+
+/**/
+
+@media screen and (max-width: 570px) {
+    .block_account_need_confirm_modal_content,
+    .block_account_load_modal_content
+    {
+        min-width: 0;
+        width: 98%;
+    }
+}
+
+@media screen and (max-width: 545px) {
+    #login_modal_content {
+        width: 95%;
+    }
+
+    .login_block_form {
+        width: 100%;
+    }
+
+    #block_account p{
+        font-size: 13px;
+    }
+
+    .block_account_content{
+        flex-direction: column;
+    }
+
+    .block_account_content_text{
+        margin: 0;
+    }
+
+    .block_account_need_confirm_modal_content,
+    .block_account_load_modal_content
+    {
+        font-size: 13px;
+    }
+
+    .buttonSendFormLoad{
+        height: 40px;
+        padding: 10px;
+    }
+}

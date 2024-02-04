@@ -1,0 +1,201 @@
+header {
+    background-color: rgba(0, 0, 0, 0.17);
+    width: 100%;
+    height: 150px;
+    position: relative;
+}
+
+.nav_buttons{
+    width: 40px;
+    height: 40px;
+    margin: 20px 5px;
+    text-align: center;
+    overflow: visible;
+}
+
+.nav_buttons img{
+    width: inherit;
+    height: inherit;
+}
+
+.nav_button_telegram,
+.nav_button_vk
+{
+    border-radius: 15px;
+    background-color: rgb(18, 192, 218);
+    -webkit-box-shadow: 0 0 30px 0 rgb(18, 192, 218);
+    -moz-box-shadow: 0 0 30px 0 rgba(18, 192, 218,1);
+    box-shadow: 0 0 30px 0 rgba(18, 192, 218,1);
+}
+
+.nav_button_telegram:hover,
+.nav_button_vk:hover{
+    -webkit-box-shadow: 0 0 30px 10px rgb(18, 192, 218);
+    -moz-box-shadow: 0 0 30px 10px rgba(18, 192, 218,1);
+    box-shadow: 0 0 30px 10px rgba(18, 192, 218,1);
+    cursor: pointer;
+}
+
+.nav_button_donate{
+    border-radius: 10px;
+    background-color: rgb(227, 177, 33);
+    -webkit-box-shadow: 0 0 30px 0 rgb(227, 177, 33);
+    -moz-box-shadow: 0 0 30px 0 rgba(227, 177, 33,1);
+    box-shadow: 0 0 30px 0 rgba(227, 177, 33,1);
+}
+
+.nav_button_donate:hover{
+    -webkit-box-shadow: 0 0 30px 10px rgb(227, 177, 33);
+    -moz-box-shadow: 0 0 30px 10px rgba(227, 177, 33,1);
+    box-shadow: 0 0 30px 10px rgba(227, 177, 33,1);
+    cursor: pointer;
+}
+
+.nav_button_youtube{
+    border-radius: 15px;
+    background-color: rgb(217, 18, 18);
+    -webkit-box-shadow: 0 0 30px 0 rgb(217, 18, 18);
+    -moz-box-shadow: 0 0 30px 0 rgba(217, 18, 18,1);
+    box-shadow: 0 0 30px 0 rgba(217, 18, 18,1);
+}
+
+.nav_button_youtube:hover{
+    -webkit-box-shadow: 0 0 30px 10px rgb(217, 18, 18);
+    -moz-box-shadow: 0 0 30px 10px rgba(217, 18, 18,1);
+    box-shadow: 0 0 30px 10px rgba(217, 18, 18,1);
+    cursor: pointer;
+}
+
+.nav_button_tiktok{
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
+    -webkit-box-shadow: 0 0 30px 0 rgb(255, 255, 255);
+    -moz-box-shadow: 0 0 30px 0 rgba(255, 255, 255,1);
+    box-shadow: 0 0 30px 0 rgba(255, 255, 255,1);
+}
+
+.nav_button_tiktok:hover{
+    -webkit-box-shadow: 0 0 30px 10px rgb(255, 255, 255);
+    -moz-box-shadow: 0 0 30px 10px rgba(255, 255, 255,1);
+    box-shadow: 0 0 30px 10px rgba(255, 255, 255,1);
+    cursor: pointer;
+}
+
+.logo{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.logo img{
+    width: inherit;
+    height: inherit;
+    border-radius: 100px;
+
+    background-color: rgb(126, 11, 126);
+    -webkit-box-shadow: 0 0 70px 0 rgba(126, 11, 126,1);
+    -moz-box-shadow: 0 0 70px 0 rgba(126, 11, 126,1);
+    box-shadow: 0 0 70px 0 rgba(126, 11, 126,1);
+}
+
+.logo p{
+    margin: 15px 0;
+}
+
+#navigate_modal{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+#navigate_modal_content{
+    width: 500px;
+    background-color: rgb(15, 15, 15);
+    margin: auto;
+    border-radius: 15px;
+}
+
+.navigate_modal_info{
+    width: inherit;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.navigate_modal_info p{
+    margin: 20px;
+}
+
+.block_navigate_image{
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+#navigate_image{
+    width: inherit;
+    height: inherit;
+}
+
+.navigate_modal_buttons{
+    width: inherit;
+    display: flex;
+    justify-content: center;
+}
+
+#navigate_modal_content,
+.navigate_modal_buttons button{
+    border-radius: 15px;
+}
+
+.navigate_modal_buttons button{
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.navigate_modal_buttons button{
+    outline: 0;
+    outline-offset: 0;
+    border: none;
+    width: inherit;
+    height: 40px;
+    color: white;
+}
+
+@media screen and (max-width: 545px) {
+    header{
+        height: 100px;
+    }
+
+    .logo{
+        width: 100px;
+        height: 100px;
+        top: 130px;
+    }
+
+    .nav_buttons{
+        width: 35px;
+        height: 35px;
+    }
+}
+
+@media screen and (max-width: 545px) {
+    #navigate_modal_content{
+        width: 95%;
+    }
+    .navigate_modal_info,
+    .navigate_modal_buttons
+    {
+        width: 100%;
+    }
+}

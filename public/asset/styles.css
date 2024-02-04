@@ -1,0 +1,29 @@
+body html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgba(17, 17, 17, 0.96);
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: white;
+}
+
+.body_container{
+    width: 100%;
+    height: 100%;
+    margin-top: 150px;
+}
+
+.default_block{
+    padding: 20px;
+    margin: 40px auto;
+    width: 500px;
+    background-color: rgba(17, 17, 17, 0.85);
+    border-radius: 15px;
+}
+
+.default_block_n2{
+    background-color: rgb(24, 24, 24);
+}
