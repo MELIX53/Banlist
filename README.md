@@ -1,7 +1,5 @@
 # Архив Наказаний
 
-> Демонстрация знаний (*Временно публичный проект*)
-
 **Для игрокового сервера Minecraft Bedrock *[Dygers](https://dygers.fun/telegram)***
 
 [Демонстрация Архива Наказаний](https://banlist.dygers.fun)
